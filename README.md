@@ -1,16 +1,123 @@
-# dydxHarneX User for Mac
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/dydxharnex-user-wordmark-dark.svg">
+    <img src="assets/dydxharnex-user-wordmark-light.svg" alt="dydxHarneX User" width="420">
+  </picture>
+</p>
 
-dydxHarneX is a desktop workspace for the AI coding CLIs you already use: Claude Code, Codex, Gemini and more, side by side, on your own accounts.
+<h1 align="center">Your coding agents. One Mac workspace.</h1>
 
-This repository holds **release downloads only**. It contains no source code.
+<p align="center">
+  Chat with Claude Code, Codex and other agents, run their CLIs side by side,<br>
+  and edit and test the same project folder without switching apps.<br>
+  Your accounts, your files, your Mac.
+</p>
 
-## Download
+<p align="center">
+  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><img src="assets/download-mac.svg" alt="Download dydxHarneX User for Mac (Apple Silicon)" width="262" height="58"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><b>Download for Mac (Apple Silicon)</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/panditfloki/dydxharnex/releases/latest">Release notes</a>
+</p>
+
+<p align="center">
+  <sub>v0.1.2 limited preview · not notarized by Apple yet · macOS 12 or later · M1 or later · licence key required</sub>
+</p>
+
+<p align="center">
+  <a href="#how-a-session-goes">How it works</a> ·
+  <a href="#your-providers-your-subscriptions">Providers</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#updates">Updates</a> ·
+  <a href="#your-data">Your data</a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workspace-dark.png">
+  <img src="assets/workspace-light.png" alt="The dydxHarneX User 0.1.2 window: a project sidebar on the left, a terminal showing three passing tests in the middle, and the code editor with the sample file tides.js on the right." width="100%">
+</picture>
+
+<p align="center"><sub>The real dydxHarneX User 0.1.2 window, in light and dark appearance. <i>tidepool</i> is a fictional sample project made for this page; the terminal shows an actual run of its tests.</sub></p>
+
+## The problem it solves
+
+A typical agent day means a Claude Code tab, a Codex tab, a plain terminal and an editor, each opened separately and each pointed at a folder you had to remember. dydxHarneX User puts them in one window, scoped to one project folder, so every chat, CLI lane, editor tab and shell starts in the right place.
+
+## How a session goes
+
+1. **Open the project folder once.** It appears in the sidebar with its chats underneath.
+2. **Open the lanes you need.** A plain terminal, or the Claude Code, Codex, OpenCode, Grok, Kimi Code or Antigravity CLI. Each lane opens in the project folder and uses that tool's own sign-in.
+3. **Start a chat and choose who answers.** Pick the agent, model and effort for that chat, plus how much it may do without asking.
+4. **Split off a subagent when a task branches.** It is created as a child of the current chat in the same project, with its own provider, model and effort.
+5. **Check the result where it lives.** Read and edit the file in the built-in editor, then run the tests in the terminal next to it.
+
+<p align="center">
+  <img src="assets/cli-lanes.png" alt="The Open CLI lanes dialog for the tidepool project, with cards for Terminal (Any CLI), Codex, Claude Code, OpenCode, Grok, Kimi Code and Antigravity, and an Open 1 CLI button." width="560">
+</p>
+<p align="center"><sub>Open several CLI lanes for a project in one step. Only tools installed on your Mac can run.</sub></p>
+
+## Pick the agent, model and effort per chat
+
+<p align="center">
+  <img src="assets/model-effort-picker.png" alt="The chat picker with columns for Agent (Claude, Codex, Grok, Kimi, Antigravity), Model (Opus 5.5, Fable 5.1, Sonnet 5.5 and more), Effort (Low to Ultra), Fast mode and Permissions (Ask approval, Auto, Full access)." width="100%">
+</p>
+<p align="center"><sub>One picker for agent, model, effort and permissions. The models and effort levels you see depend on the provider, the model and your account.</sub></p>
+
+Each chat keeps its own choice, so a quick question can go to a small model while a hard refactor gets a larger one at higher effort. Permissions are set per chat as **Ask approval**, **Auto** or **Full access**. Each maps to that agent's own permission mode, so what it covers depends on the actions the provider supports, and you can change it at any time.
+
+## Branch work into subagents
+
+<p align="center">
+  <img src="assets/subagent-dialog.png" alt="The Create a subagent dialog: a child of the current chat in this project, with Provider, Model, Effort and an optional Name." width="360">
+</p>
+<p align="center"><sub>A subagent is linked to its parent chat and starts with no task until you give it one.</sub></p>
+
+The parent and child stay grouped in the sidebar, so you can see which conversation a side task came from.
+
+## Also in the workspace
+
+- **Explorer and editor** with file tree, tabs, search and a diff review for project files.
+- **Live project preview** for what you build, such as a local dev server or a static page. Pick an element or take a screenshot and hand it to the chat.
+- **Browser panel** for docs and other websites. Agents can use it only while Browser Control is on in Settings.
+- **MCP servers and project plugins** in Settings. A plugin works once you connect its service; appearing in the catalog does not mean it is connected.
+- **Projects and chats sidebar** with filters for chats that are working, unread or waiting for you.
+- **Light, dark or system appearance**, with adjustable text size.
+- **Docs, Plan and Pad** for notes, task lists and sketches next to your chats.
+
+## Your providers, your subscriptions
+
+dydxHarneX does not sell or resell model access. Each agent signs in with your own account, and its usage counts against your plan with that provider.
+
+| What you connect | How it works in dydxHarneX |
+| --- | --- |
+| Claude Code, Codex, OpenCode, Grok, Kimi Code, Antigravity | Run as CLI lanes, and as chat providers where your account allows. |
+| Cursor Agent | A chat provider, using Cursor Agent's own sign-in and model list. Install its CLI and run `agent login` first. |
+| API providers, such as DeepSeek, OpenRouter or Mistral | Chat through the Custom provider form with your own API key. A saved key is shown as saved, not as tested. |
+| Local model servers, such as Ollama or LM Studio | Chat through Local models while the server runs on your Mac. |
+| Any other command-line tool | Run it in a plain terminal lane inside the project folder. |
+
+Nothing is connected until you sign in or add a key yourself, and no model usage is included. The Connections card under Settings > Providers shows what is installed and signed in on your Mac. When you send a message, that request goes to the provider you chose for that chat, under that provider's terms.
+
+## Requirements
+
+- A Mac with Apple Silicon (M1 or later). Intel Macs are not supported.
+- macOS 12 Monterey or later.
+- At least one AI account of your own: a coding CLI you are signed in to, an API key, or a local model server.
+- An email address and licence key issued to you by DYDXFX.
+
+## Limited preview
+
+dydxHarneX User 0.1.2 is a limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later. This build is not notarized by Apple yet, so the first launch needs one extra step (below).
+
+## Install
 
 **[Download dydxHarneX User for Mac (Apple Silicon)](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg)**
 
-- Apple Silicon Macs only (M1 or later). Intel Macs are not supported.
-- macOS 12 Monterey or later.
-- At least one AI coding CLI installed and signed in with your own account.
+1. Open the DMG and drag **dydxHarneX User** onto **Applications**.
+2. Eject the dydxHarneX disk.
 
 Every release lists the SHA-256 of each file next to it. To check a download:
 
@@ -18,14 +125,12 @@ Every release lists the SHA-256 of each file next to it. To check a download:
 shasum -a 256 ~/Downloads/dydxHarneX-User-arm64.dmg
 ```
 
-## Install
+### First open
 
-1. Open the DMG and drag **dydxHarneX User** onto **Applications**.
-2. Eject the dydxHarneX disk.
+macOS blocks the first launch because the app is not notarized yet. You only do this once.
 
-## First open
-
-This build is not notarized by Apple yet, so macOS blocks the first launch. You only do this once.
+<details>
+<summary><b>Show the first-open steps</b></summary>
 
 **macOS 15 Sequoia or later**
 
@@ -42,20 +147,26 @@ If macOS says the app "is damaged and can't be opened", run this once in Termina
 xattr -dr com.apple.quarantine "/Applications/dydxHarneX User.app"
 ```
 
-## Limited preview
-
-dydxHarneX User is in limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later.
+</details>
 
 ## Updates
 
-The app checks this repository for signed updates on launch and every 6 hours. To check now, click the version at the bottom left of the sidebar, or choose **dydxHarneX User > Check for Updates**. Each update is verified against a DYDXFX signing key and a SHA-256 checksum, and nothing installs until you say so.
+<p align="center">
+  <img src="assets/update-inline.png" alt="The bottom of the sidebar showing an inline status card: You're up to date, dydxHarneX v0.1.2." width="260">
+</p>
+
+The app checks this repository for signed updates on launch and every 6 hours. To check now, click the version at the bottom left of the sidebar, or choose **dydxHarneX User > Check for Updates**. The result appears inline in the sidebar.
+
+Each update is verified against a DYDXFX signing key and a SHA-256 checksum, and nothing installs until you say so.
 
 ## Your data
 
-Projects, chats and settings stay on your Mac in `~/Library/Application Support/dydxHarneX-User`. Your AI accounts and their usage stay with each provider.
+Your project files stay in the folders you open; dydxHarneX works on them in place. Chats, settings and app state are kept in a local profile at `~/Library/Application Support/dydxHarneX-User`. When you send a message, it goes only to the provider you chose for that chat. Your AI accounts and their usage stay with each provider.
 
 ## Licence
 
-dydxHarneX User is proprietary software. Using it requires a licence issued by DYDXFX. See the [notice](LICENSE).
+dydxHarneX User is proprietary software. Using it requires a licence issued by DYDXFX. This repository holds release downloads only and contains no source code. See the [notice](LICENSE).
 
-© 2026 dydxfx · https://dydxfx.com
+<p align="center"><sub>Screenshots show dydxHarneX User 0.1.2 with a fictional sample project. Provider names belong to their owners.</sub></p>
+
+<p align="center"><sub>© 2026 dydxfx · <a href="https://dydxfx.com">dydxfx.com</a></sub></p>
