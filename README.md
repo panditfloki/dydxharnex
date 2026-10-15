@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <sub>v0.1.3 limited preview · not notarized by Apple yet · macOS 12 or later · M1 or later · licence key required</sub>
+  <sub>v0.1.31 limited preview · not notarized by Apple yet · macOS 12 or later · M1 or later · licence key required</sub>
 </p>
 
 <p align="center">
@@ -110,9 +110,9 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User 0.1.3 is a limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later. This build is not notarized by Apple yet, so the first launch needs one extra step (below).
+dydxHarneX User 0.1.31 is a limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later. This build is not notarized by Apple yet, so the first launch needs one extra step (below).
 
-In 0.1.3, **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the correct product/legal pages, and keeps update results inline. Existing 0.1.2 users can choose **Check for Updates > Update now**.
+**Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.31** fixes restart checks for idle provider services and adds **Restart now** to the downloaded-update panel. Active tasks still delay restart.
 
 [Website](https://www.dydxfx.com/harnex/) · [Privacy policy](https://www.dydxfx.com/harnex/privacy.html) · [Terms of sale](https://www.dydxfx.com/harnex/terms.html)
 
@@ -162,6 +162,10 @@ xattr -dr com.apple.quarantine "/Applications/dydxHarneX User.app"
 The app checks this repository for signed updates on launch and every 6 hours. To check now, click the version at the bottom left of the sidebar, or choose **dydxHarneX User > Check for Updates**. The result appears inline in the sidebar.
 
 Each update is verified against a DYDXFX signing key and a SHA-256 checksum, and nothing installs until you say so.
+
+Once a download is ready, **Restart now** checks for active tasks again. **Update waiting** reopens the panel if you dismissed it. If the app cannot confirm activity, it waits and explains why.
+
+When upgrading from 0.1.3 or earlier, your installed updater handles that first upgrade. The new **Restart now** button appears after 0.1.31 is installed. If the old updater stays at **Update waiting** with no active work, download the DMG, quit User after saving your work, and replace the app in Applications. Keep your existing User profile to retain saved chats and settings.
 
 ## Your data
 
