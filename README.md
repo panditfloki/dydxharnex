@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <sub>v0.1.2 limited preview · not notarized by Apple yet · macOS 12 or later · M1 or later · licence key required</sub>
+  <sub>v0.1.3 limited preview · not notarized by Apple yet · macOS 12 or later · M1 or later · licence key required</sub>
 </p>
 
 <p align="center">
@@ -110,7 +110,11 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User 0.1.2 is a limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later. This build is not notarized by Apple yet, so the first launch needs one extra step (below).
+dydxHarneX User 0.1.3 is a limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later. This build is not notarized by Apple yet, so the first launch needs one extra step (below).
+
+In 0.1.3, **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the correct product/legal pages, and keeps update results inline. Existing 0.1.2 users can choose **Check for Updates > Update now**.
+
+[Website](https://www.dydxfx.com/harnex/) · [Privacy policy](https://www.dydxfx.com/harnex/privacy.html) · [Terms of sale](https://www.dydxfx.com/harnex/terms.html)
 
 ## Install
 
