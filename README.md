@@ -5,26 +5,30 @@
   </picture>
 </p>
 
-<h1 align="center">Your coding agents. One Mac workspace.</h1>
+<h1 align="center">Your coding agents. One workspace, on Mac or Windows.</h1>
 
 <p align="center">
   Chat with Claude Code, Codex and other agents, run their CLIs side by side,<br>
   and edit and test the same project folder without switching apps.<br>
-  Your accounts, your files, your Mac.
+  Your accounts, your files, your computer.
 </p>
 
 <p align="center">
   <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><img src="assets/download-mac.svg" alt="Download dydxHarneX User for Mac (Apple Silicon)" width="262" height="58"></a>
+  &nbsp;
+  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><b>Download for Mac (Apple Silicon)</b></a>
   &nbsp;·&nbsp;
+  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip"><b>Download for Windows 11 (x64)</b></a>
+  &nbsp;·&nbsp;
   <a href="https://github.com/panditfloki/dydxharnex/releases/latest">Release notes</a>
 </p>
 
 <p align="center">
-  <sub>v0.1.31 limited preview · not notarized by Apple yet · macOS 12 or later · M1 or later · licence key required</sub>
+  <sub>v0.1.40 limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -103,20 +107,22 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Requirements
 
-- A Mac with Apple Silicon (M1 or later). Intel Macs are not supported.
-- macOS 12 Monterey or later.
+- **Mac:** Apple Silicon (M1 or later) with macOS 12 Monterey or later. Intel Macs are not supported.
+- **Windows:** Windows 11 on an x64 PC. Windows 10 and Arm PCs are not supported.
 - At least one AI account of your own: a coding CLI you are signed in to, an API key, or a local model server.
 - An email address and licence key issued to you by DYDXFX.
 
 ## Limited preview
 
-dydxHarneX User 0.1.31 is a limited preview. It activates with the email address and licence key issued to you by DYDXFX. Online sign-up, free trials and paid plans are not available yet; they come with the paid launch later. This build is not notarized by Apple yet, so the first launch needs one extra step (below).
+dydxHarneX User 0.1.40 is a limited preview for Mac and, new in this version, for Windows 11. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
-**Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.31** fixes restart checks for idle provider services and adds **Restart now** to the downloaded-update panel. Active tasks still delay restart.
+**Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://github.com/panditfloki/dydxharnex/releases/latest).
 
 [Website](https://www.dydxfx.com/harnex/) · [Privacy policy](https://www.dydxfx.com/harnex/privacy.html) · [Terms of sale](https://www.dydxfx.com/harnex/terms.html)
 
 ## Install
+
+### Mac
 
 **[Download dydxHarneX User for Mac (Apple Silicon)](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg)**
 
@@ -129,7 +135,7 @@ Every release lists the SHA-256 of each file next to it. To check a download:
 shasum -a 256 ~/Downloads/dydxHarneX-User-arm64.dmg
 ```
 
-### First open
+#### First open on Mac
 
 macOS blocks the first launch because the app is not notarized yet. You only do this once.
 
@@ -153,23 +159,40 @@ xattr -dr com.apple.quarantine "/Applications/dydxHarneX User.app"
 
 </details>
 
+### Windows
+
+**[Download dydxHarneX User for Windows 11 (x64)](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip)**
+
+1. Right-click the downloaded zip and choose **Extract All**. Do not start the app from inside the zip.
+2. Open the extracted **dydxHarneX User-win32-x64** folder and run **dydxHarneX User.exe**.
+3. The app is not code-signed yet, so Windows shows **Windows protected your PC**. Choose **More info**, then **Run anyway**. You only do this once. On PCs where **Smart App Control** is on, Windows blocks unsigned apps and this preview cannot be opened.
+4. Choose **Install**. It installs for your Windows account only, without administrator rights, adds a Start menu entry and an entry in **Settings > Apps**, and opens.
+
+To check a download in PowerShell:
+
+```powershell
+Get-FileHash -Algorithm SHA256 "$env:USERPROFILE\Downloads\dydxHarneX-User-win-x64.zip"
+```
+
+To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats, settings and licence stay in your Windows user profile.
+
 ## Updates
 
 <p align="center">
   <img src="assets/update-inline.png" alt="The bottom of the sidebar showing an inline status card: You're up to date, dydxHarneX v0.1.2." width="260">
 </p>
 
-The app checks this repository for signed updates on launch and every 6 hours. To check now, click the version at the bottom left of the sidebar, or choose **dydxHarneX User > Check for Updates**. The result appears inline in the sidebar.
+The app checks this repository for signed updates on launch and every 6 hours. To check now, click the version at the bottom left of the sidebar, or on Mac choose **dydxHarneX User > Check for Updates**. The result appears inline in the sidebar. On Windows only the installed copy updates itself; a copy started without installing points you to the release page.
 
 Each update is verified against a DYDXFX signing key and a SHA-256 checksum, and nothing installs until you say so.
 
 Once a download is ready, **Restart now** checks for active tasks again. **Update waiting** reopens the panel if you dismissed it. If the app cannot confirm activity, it waits and explains why.
 
-When upgrading from 0.1.3 or earlier, your installed updater handles that first upgrade. The new **Restart now** button appears after 0.1.31 is installed. If the old updater stays at **Update waiting** with no active work, download the DMG, quit User after saving your work, and replace the app in Applications. Keep your existing User profile to retain saved chats and settings.
+On Mac, when upgrading from 0.1.3 or earlier, your installed updater handles that first upgrade. The new **Restart now** button appears after 0.1.31 is installed. If the old updater stays at **Update waiting** with no active work, download the DMG, quit User after saving your work, and replace the app in Applications. Keep your existing User profile to retain saved chats and settings.
 
 ## Your data
 
-Your project files stay in the folders you open; dydxHarneX works on them in place. Chats, settings and app state are kept in a local profile at `~/Library/Application Support/dydxHarneX-User`. When you send a message, it goes only to the provider you chose for that chat. Your AI accounts and their usage stay with each provider.
+Your project files stay in the folders you open; dydxHarneX works on them in place. Chats, settings and app state are kept in a local profile: `~/Library/Application Support/dydxHarneX-User` on Mac, `%APPDATA%\dydxHarneX-User` on Windows. On Windows the app itself installs to `%LOCALAPPDATA%\Programs\dydxHarneX User`. When you send a message, it goes only to the provider you chose for that chat. Your AI accounts and their usage stay with each provider.
 
 ## Licence
 
