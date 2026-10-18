@@ -14,21 +14,21 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><img src="assets/download-mac.svg" alt="Download dydxHarneX User for Mac (Apple Silicon)" width="262" height="58"></a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-arm64.dmg"><img src="assets/download-mac.svg" alt="Download dydxHarneX User for Mac (Apple Silicon)" width="262" height="58"></a>
   &nbsp;
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><b>Download for Mac (Apple Silicon)</b></a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-arm64.dmg"><b>Download for Mac (Apple Silicon)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip"><b>Download for Windows 11 (x64)</b></a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip"><b>Download for Windows 11 (x64)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest">Release notes</a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest">Release notes</a>
 </p>
 
 <p align="center">
-  <sub>v0.1.40 limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>v0.1.41 limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -114,9 +114,9 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User 0.1.40 is a limited preview for Mac and, new in this version, for Windows 11. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User 0.1.41 is a limited preview for Mac and Windows 11. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
-**Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://github.com/panditfloki/dydxharnex/releases/latest).
+**Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
 [Website](https://www.dydxfx.com/harnex/) · [Privacy policy](https://www.dydxfx.com/harnex/privacy.html) · [Terms of sale](https://www.dydxfx.com/harnex/terms.html)
 
@@ -124,7 +124,7 @@ dydxHarneX User 0.1.40 is a limited preview for Mac and, new in this version, fo
 
 ### Mac
 
-**[Download dydxHarneX User for Mac (Apple Silicon)](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg)**
+**[Download dydxHarneX User for Mac (Apple Silicon)](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-arm64.dmg)**
 
 1. Open the DMG and drag **dydxHarneX User** onto **Applications**.
 2. Eject the dydxHarneX disk.
@@ -161,7 +161,7 @@ xattr -dr com.apple.quarantine "/Applications/dydxHarneX User.app"
 
 ### Windows
 
-**[Download dydxHarneX User for Windows 11 (x64)](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip)**
+**[Download dydxHarneX User for Windows 11 (x64)](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip)**
 
 1. Right-click the downloaded zip and choose **Extract All**. Do not start the app from inside the zip.
 2. Open the extracted **dydxHarneX User-win32-x64** folder and run **dydxHarneX User.exe**.
@@ -177,6 +177,8 @@ Get-FileHash -Algorithm SHA256 "$env:USERPROFILE\Downloads\dydxHarneX-User-win-x
 To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats, settings and licence stay in your Windows user profile.
 
 ## Updates
+
+**Moving from GitHub:** 0.1.41 uses this GitLab project for signed updates and downloads. If your installed 0.1.40 cannot reach its old GitHub feed, download 0.1.41 here and install it once. Finish active work and quit the old app first. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
 
 <p align="center">
   <img src="assets/update-inline.png" alt="The bottom of the sidebar showing an inline status card: You're up to date, dydxHarneX v0.1.2." width="260">
