@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>v0.1.41 limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.43 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -88,7 +88,7 @@ The parent and child stay grouped in the sidebar, so you can see which conversat
 - **Browser panel** for docs and other websites. Agents can use it only while Browser Control is on in Settings.
 - **MCP servers and project plugins** in Settings. A plugin works once you connect its service; appearing in the catalog does not mean it is connected.
 - **Projects and chats sidebar** with filters for chats that are working, unread or waiting for you.
-- **Light, dark or system appearance**, with adjustable text size.
+- **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size. Light-mode accent selection and focus colours are corrected in Mac 0.1.43.
 - **Docs, Plan and Pad** for notes, task lists and sketches next to your chats.
 
 ## Your providers, your subscriptions
@@ -114,7 +114,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User 0.1.41 is a limited preview for Mac and Windows 11. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.43 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
@@ -178,7 +178,7 @@ To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats,
 
 ## Updates
 
-**Moving from GitHub:** 0.1.41 uses this GitLab project for signed updates and downloads. If your installed 0.1.40 cannot reach its old GitHub feed, download 0.1.41 here and install it once. Finish active work and quit the old app first. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
+**Moving from GitHub:** 0.1.41 uses this GitLab project for signed updates and downloads. If your installed 0.1.40 cannot reach its old GitHub feed, download the current package for your platform here and install it once. Finish active work and quit the old app first. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
 
 <p align="center">
   <img src="assets/update-inline.png" alt="The bottom of the sidebar showing an inline status card: You're up to date, dydxHarneX v0.1.2." width="260">
