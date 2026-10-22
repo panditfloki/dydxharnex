@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.44 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.45 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -79,7 +79,9 @@ Each chat keeps its own choice, so a quick question can go to a small model whil
 </p>
 <p align="center"><sub>A subagent is linked to its parent chat and starts with no task until you give it one.</sub></p>
 
-The parent and child stay grouped in the sidebar, so you can see which conversation a side task came from.
+The parent and child stay grouped in the sidebar, so you can see which conversation a side task came from. In Mac 0.1.45, a chat's menu also offers **Attach to a parent chat**, **Change parent chat** and **Detach** for existing chats in the same project. Organising a chat keeps its history and original fork/creation record.
+
+Choose **Message another chat** to pick a loaded local project and a specific chat, preview your message and send it. Busy chats queue the message; a closed chat can be reopened with **Open and send**. An optional one-time reply returns to the sending chat. Only the message you compose is shared.
 
 ## Also in the workspace
 
@@ -89,7 +91,7 @@ The parent and child stay grouped in the sidebar, so you can see which conversat
 - **Computer settings** separate the selected chat permission from the profile default, with temporary or explicitly remembered Full access and clearer macOS permission requests. App permission does not grant macOS access.
 - **Settings search and Phone pairing** make setup easier to find; Bots links to provider and project setup when needed.
 - **MCP servers and project plugins** in Settings. A plugin works once you connect its service; appearing in the catalog does not mean it is connected.
-- **Projects and chats sidebar** with filters for chats that are working, unread or waiting for you.
+- **Projects and chats sidebar** with filters for chats that are working, unread or waiting for you. Mac 0.1.45 adds consistent navigation icons, remembered **This Machine** show/hide and **Projects Expand/Restore** controls, and consistent accent strength on selected rows.
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size. Light-mode accent selection and focus colours are corrected in Mac 0.1.43.
 - **Docs, Plan and Pad** for notes, task lists and sketches next to your chats.
 
@@ -116,7 +118,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.44 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.45 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
