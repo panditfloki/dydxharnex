@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.43 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.44 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -85,7 +85,9 @@ The parent and child stay grouped in the sidebar, so you can see which conversat
 
 - **Explorer and editor** with file tree, tabs, search and a diff review for project files.
 - **Live project preview** for what you build, such as a local dev server or a static page. Pick an element or take a screenshot and hand it to the chat.
-- **Browser panel** for docs and other websites. Agents can use it only while Browser Control is on in Settings.
+- **Browser panel** for docs and other websites. Agents can use it only while Browser Control is on in Settings. Its saved On/Off choice and any save error are shown in Mac 0.1.44.
+- **Computer settings** separate the selected chat permission from the profile default, with temporary or explicitly remembered Full access and clearer macOS permission requests. App permission does not grant macOS access.
+- **Settings search and Phone pairing** make setup easier to find; Bots links to provider and project setup when needed.
 - **MCP servers and project plugins** in Settings. A plugin works once you connect its service; appearing in the catalog does not mean it is connected.
 - **Projects and chats sidebar** with filters for chats that are working, unread or waiting for you.
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size. Light-mode accent selection and focus colours are corrected in Mac 0.1.43.
@@ -114,7 +116,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.43 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.44 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
