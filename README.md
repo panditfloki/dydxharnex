@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.45 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.46 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -107,7 +107,7 @@ dydxHarneX does not sell or resell model access. Each agent signs in with your o
 | Local model servers, such as Ollama or LM Studio | Chat through Local models while the server runs on your Mac. |
 | Any other command-line tool | Run it in a plain terminal lane inside the project folder. |
 
-Nothing is connected until you sign in or add a key yourself, and no model usage is included. The Connections card under Settings > Providers shows what is installed and signed in on your Mac. When you send a message, that request goes to the provider you chose for that chat, under that provider's terms.
+Nothing is connected until you sign in or add a key yourself, and no model usage is included. The Connections card under Settings > Providers shows what is installed and signed in on your Mac. Mac 0.1.46 adds installation-aware provider updates: native Claude uses its own updater, npm updates target the selected installation, and the popup distinguishes Updated, Already up to date and actionable failures. Updates wait for active work using that provider. When you send a message, that request goes to the provider you chose for that chat, under that provider's terms.
 
 ## Requirements
 
@@ -118,7 +118,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.45 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.46 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
