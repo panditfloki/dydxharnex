@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.47 · Windows v0.1.47 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.48 · Windows v0.1.47 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -191,6 +191,8 @@ The [ZIP package](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/l
 To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats, settings and licence stay in your Windows user profile.
 
 ## Updates
+
+**Mac 0.1.48:** In installed 0.1.47, use **Check for Updates**, finish active work, then restart when the update is ready. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile. Windows remains at 0.1.47.
 
 **Moving from GitHub:** 0.1.41 uses this GitLab project for signed updates and downloads. If your installed 0.1.40 cannot reach its old GitHub feed, download the current package for your platform here and install it once. Finish active work and quit the old app first. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
 
