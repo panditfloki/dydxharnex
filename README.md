@@ -16,19 +16,19 @@
 <p align="center">
   <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-arm64.dmg"><img src="assets/download-mac.svg" alt="Download dydxHarneX User for Mac (Apple Silicon)" width="262" height="58"></a>
   &nbsp;
-  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-Setup-x64.exe"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
 </p>
 
 <p align="center">
   <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-arm64.dmg"><b>Download for Mac (Apple Silicon)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip"><b>Download for Windows 11 (x64)</b></a>
+  <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-Setup-x64.exe"><b>Download for Windows 11 (x64)</b></a>
   &nbsp;·&nbsp;
   <a href="https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest">Release notes</a>
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.47 · Windows v0.1.42 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.47 · Windows v0.1.47 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -101,7 +101,7 @@ Choose **Message another chat** to pick a loaded local project and a specific ch
 - Detached panels, composer/Appearance and draft handling improvements; OpenCode V1/V2 selection and provider/account improvements.
 - Mini Apps, Shot capture/edit/export, durable SSH jobs and quit/update safeguards.
 - Browser/Preview reload when detached or docked; history and in-page state are not transferred. Broader native/provider workflows remain under owner testing.
-- Windows stays on 0.1.42 until the new Windows package is validated.
+- Windows 0.1.47 packages the same shared UI, provider/account and utility changes with the Windows runtime. The macOS native helper is Mac-only; Windows uses its existing Computer Use backend. Full provider and desktop workflows still need testing on a Windows 11 x64 PC.
 
 ## Your providers, your subscriptions
 
@@ -126,7 +126,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.47 and Windows 0.1.42. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.47 and Windows 0.1.47. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
@@ -173,18 +173,20 @@ xattr -dr com.apple.quarantine "/Applications/dydxHarneX User.app"
 
 ### Windows
 
-**[Download dydxHarneX User for Windows 11 (x64)](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip)**
+**[Download Setup.exe for Windows 11 (x64)](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-Setup-x64.exe)**
 
-1. Right-click the downloaded zip and choose **Extract All**. Do not start the app from inside the zip.
-2. Open the extracted **dydxHarneX User-win32-x64** folder and run **dydxHarneX User.exe**.
-3. The app is not code-signed yet, so Windows shows **Windows protected your PC**. Choose **More info**, then **Run anyway**. You only do this once. On PCs where **Smart App Control** is on, Windows blocks unsigned apps and this preview cannot be opened.
-4. Choose **Install**. It installs for your Windows account only, without administrator rights, adds a Start menu entry and an entry in **Settings > Apps**, and opens.
+1. Finish active work and quit the previous dydxHarneX User app.
+2. Run **dydxHarneX-User-Setup-x64.exe** and follow the installer. It installs for your Windows account without administrator rights and adds a Start menu entry.
+3. This preview is not code-signed. If Windows shows **Windows protected your PC**, use **More info > Run anyway** only after checking that this is the file you downloaded here. If **Smart App Control** blocks it, this unsigned preview cannot be opened on that PC; do not disable that protection.
+4. Open **dydxHarneX User** from the Start menu and activate it with your issued licence.
 
-To check a download in PowerShell:
+To check the installer against the release checksum in PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 "$env:USERPROFILE\Downloads\dydxHarneX-User-win-x64.zip"
+Get-FileHash -Algorithm SHA256 "$env:USERPROFILE\Downloads\dydxHarneX-User-Setup-x64.exe"
 ```
+
+The [ZIP package](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip) remains available for manual extraction. Extract it fully before opening **dydxHarneX User.exe**; an uninstalled copy does not update itself.
 
 To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats, settings and licence stay in your Windows user profile.
 
