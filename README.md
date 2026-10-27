@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.49 · Windows v0.1.49 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.52 · Windows v0.1.51 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -95,6 +95,16 @@ Choose **Message another chat** to pick a loaded local project and a specific ch
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size. Light-mode accent selection and focus colours are corrected in Mac 0.1.43.
 - **Docs, Plan and Pad** for notes, task lists and sketches next to your chats.
 
+## 0.1.52 for Mac
+
+- Available providers can be reordered by dragging; disconnected providers are hidden. **Add more AI providers** opens their settings directly.
+- Adding a project immediately shows its files without waiting for a chat. Linked folders support read-only browsing and preview.
+- File previews support Close, Minimize and Restore with the view and scroll position preserved.
+- A live monitor icon identifies Computer Use in a chat and its child chats, within mounted chat streams in the same window. Closed chats, other windows/devices, Bots and separate CLI lanes are not covered.
+- Includes the 0.1.51 Send/Enter repair for React error 321.
+
+Windows remains at **0.1.51** while Mac daily-use testing continues. The Windows downloads and signed update feed below retain that release. Native daily use and real provider/cloud-folder checks remain in owner testing. [Full Mac release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.52).
+
 ## 0.1.49 (Mac and Windows)
 
 - Startup no longer opens interactive Codex or Claude sessions to read usage or models unless that CLI reports it is signed in, so unexpected browser sign-in tabs stop.
@@ -133,7 +143,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.49 and Windows 0.1.49. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.52 and Windows 0.1.51. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
@@ -199,9 +209,9 @@ To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats,
 
 ## Updates
 
-**Mac 0.1.49:** In installed 0.1.41 through 0.1.48, use **Check for Updates**, finish active work, then restart when the update is ready. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile.
+**Mac 0.1.52:** In installed 0.1.41 through 0.1.51, use **Check for Updates**, finish active work, then restart when the update is ready. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile.
 
-**Windows 0.1.49:** In an installed copy, click the version at the bottom left of the sidebar to check for updates, finish active work, then restart when the update is ready. Or quit the app and run the current Setup.exe over the existing installation. Keep the existing User profile.
+**Windows 0.1.51:** In an installed copy, click the version at the bottom left of the sidebar to check for updates, finish active work, then restart when the update is ready. Or quit the app and run the current Setup.exe over the existing installation. Keep the existing User profile.
 
 **Moving from GitHub:** 0.1.41 uses this GitLab project for signed updates and downloads. If your installed 0.1.40 cannot reach its old GitHub feed, download the current package for your platform here and install it once. Finish active work and quit the old app first. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
 
