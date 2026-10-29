@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.52 · Windows v0.1.51 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.53 · Windows v0.1.51 · limited preview · Mac: macOS 12 or later, M1 or later, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
@@ -95,6 +95,16 @@ Choose **Message another chat** to pick a loaded local project and a specific ch
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size. Light-mode accent selection and focus colours are corrected in Mac 0.1.43.
 - **Docs, Plan and Pad** for notes, task lists and sketches next to your chats.
 
+## 0.1.53 for Mac
+
+- Files refreshes automatically after external create, paste, rename and delete. Smaller windows have stable Files headers, smooth panel open/close and readable long paths.
+- Hermes Agent has its official icon and a model list available before the first message, with an explicit retry through Refresh Providers. Local chat supports replies, Stop and approvals; Hermes Plan and SSH modes are not included.
+- Pet carry, hand, leg, idle and walking animations are connected. The Computer Use status banner can be dragged within the display; its position is kept for the app run.
+- First-run setup requests Screen Recording and Accessibility early, with optional Microphone access and Set up later. Memory Saver adds Auto/Off, compact large tool outputs and process memory information.
+- Retains the provider ordering, linked-folder previews, live Computer Use chat marks and Send/Enter repair from the previous release.
+
+Windows remains at **0.1.51**. Native Mac, real Hermes/voice and banner-drag testing continues with the owner. Pet other-window physics and offline/other-provider voices are not included. Whole-app memory savings are not yet measured. [Full Mac release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.53).
+
 ## 0.1.52 for Mac
 
 - Available providers can be reordered by dragging; disconnected providers are hidden. **Add more AI providers** opens their settings directly.
@@ -143,7 +153,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.52 and Windows 0.1.51. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.53 and Windows 0.1.51. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is not notarized by Apple and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence with confirmed logout/account switching. About shows the installed version and User edition, opens the product/legal pages, and keeps update results inline. **0.1.40** adds the Start card, Artifacts, clear delivery states for every message and a safe stop when a licence ends. See the [release notes](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest).
 
@@ -209,7 +219,7 @@ To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats,
 
 ## Updates
 
-**Mac 0.1.52:** In installed 0.1.41 through 0.1.51, use **Check for Updates**, finish active work, then restart when the update is ready. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile.
+**Mac 0.1.53:** In installed 0.1.41 through 0.1.52, use **Check for Updates**, finish active work, then restart when the update is ready. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile.
 
 **Windows 0.1.51:** In an installed copy, click the version at the bottom left of the sidebar to check for updates, finish active work, then restart when the update is ready. Or quit the app and run the current Setup.exe over the existing installation. Keep the existing User profile.
 
