@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.54 · Windows v0.1.51 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.54 · Windows v0.1.54 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
-  <sub>The feature descriptions on this page cover <b>Mac 0.1.54</b>. The screenshots use the current Mac interface with fictional demo data; each caption identifies its captured version. <b>Windows 0.1.51</b> does not yet include the Mac 0.1.52 to 0.1.54 additions, such as Hermes, the current Memory settings and the current permissions setup.</sub>
+  <sub>Mac and Windows use the same current USER interface and feature sources. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.54 adds Hermes, Memory Saver, Files auto-refresh and the current Pet controls. Operating-system permissions and desktop control use the respective platform implementation.</sub>
 </p>
 
 <p align="center">
@@ -71,7 +71,7 @@ A typical agent day means a Claude Code tab, a Codex tab, a plain terminal and a
 
 ## Files and editor
 
-- **Files follows your disk.** Create, paste, rename or delete something in Finder or a terminal and the Files panel updates on its own, keeping your expansion and selection. *Mac 0.1.54; not yet in Windows 0.1.51.*
+- **Files follows your disk.** Create, paste, rename or delete something in Finder, Windows File Explorer or a terminal and the Files panel updates on its own, keeping your expansion and selection.
 - **Editor** with tabs, search and a diff review for project files. Panels open and close smoothly, and long folder paths stay readable in smaller windows.
 - **File previews** can be closed, minimised and restored with the view and scroll position kept.
 - **Live project preview** for what you build, such as a local dev server or a static page. Pick an element or take a screenshot and hand it to the chat.
@@ -87,17 +87,17 @@ A typical agent day means a Claude Code tab, a Codex tab, a plain terminal and a
 
 Each chat keeps its own choice, so a quick question can go to a small model while a hard refactor gets a larger one at higher effort.
 
-**Ask approval**, **Auto** and **Full access** each map to that agent's own permission mode, so what they cover depends on the actions the provider supports. Permissions are set per chat and can be changed at any time. Computer settings keep the selected chat permission separate from the profile default, with temporary or explicitly remembered Full access. App permission never grants macOS access by itself. *The current permissions setup is Mac 0.1.54; not yet in Windows 0.1.51.*
+**Ask approval**, **Auto** and **Full access** each map to that agent's own permission mode, so what they cover depends on the actions the provider supports. Permissions are set per chat and can be changed at any time. Computer settings keep the selected chat permission separate from the profile default, with temporary or explicitly remembered Full access. App permission never grants macOS access by itself.
 
 ### Hermes Agent, running locally
 
-Hermes Agent is available as a local chat provider. Its models are listed as soon as you select it, before the first message, and **Refresh Providers** retries if discovery fails. Chats support replies, Stop, and approval requests in Ask and Auto for supported commands and edits. Hermes Plan and SSH modes are not included. *Mac 0.1.54; not yet in Windows 0.1.51.*
+Hermes Agent is available as a local chat provider. Its models are listed as soon as you select it, before the first message, and **Refresh Providers** retries if discovery fails. Chats support replies, Stop, and approval requests in Ask and Auto for supported commands and edits. Hermes Plan and SSH modes are not included.
 
 ## Computer Use
 
 With Computer Use on, an agent can see and operate the screen for the task you give it. A live monitor icon marks the chat using it, and the status banner can be dragged anywhere within the display; its position is kept for the app run. The banner stays click-through while an agent action runs so it does not get in the way, and **Escape** stops Computer Use.
 
-First-run setup now asks for Screen Recording and Accessibility access early, with a separate optional Microphone request. **Set up later** keeps normal chats working, and the setup never restarts an active chat. *Mac 0.1.54; not yet in Windows 0.1.51.*
+On Mac, first-run setup asks for Screen Recording and Accessibility access early, with a separate optional Microphone request. **Set up later** keeps normal chats working, and the setup never restarts an active chat. Windows uses its own desktop-control and microphone settings; it does not show the macOS permission dialog.
 
 <p align="center">
   <img src="assets/permissions-current.png" alt="Set up Mac permissions: Screen Recording and Accessibility, optional Automation and Microphone, with Set up later available." width="100%">
@@ -106,7 +106,7 @@ First-run setup now asks for Screen Recording and Accessibility access early, wi
 
 ## Memory Saver
 
-**Settings > General > Memory** adds Auto/Off controls, compact rendering for large tool outputs and information about the app's own process memory. Savings across a whole real workload have not been measured yet. *Mac 0.1.54; not yet in Windows 0.1.51.*
+**Settings > General > Memory** adds Auto/Off controls, compact rendering for large tool outputs and information about the app's own process memory. Savings across a whole real workload have not been measured yet.
 
 ## Also in the workspace
 
@@ -116,12 +116,12 @@ First-run setup now asks for Screen Recording and Accessibility access early, wi
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size.
 - **Mini Apps, Shot capture and detached panels** for the side tasks around a coding session.
 
-## What's new in Mac 0.1.54
+## What's new in 0.1.54
 
 - **Updates now check GitHub first**, with a verified GitLab fallback. Both services carry the releases from 0.1.41 onward, so an installed app finds this update on whichever feed it already uses. GitHub also keeps its four earlier releases.
 - Carries everything from 0.1.53: Files live refresh, Hermes as a local provider, Pet animations, the draggable Computer Use banner, Memory Saver and the first-run access setup.
 
-Windows remains at **0.1.51** and does not yet include the Mac 0.1.52 to 0.1.54 additions. [Full Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.54) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.54).
+Windows now also ships **0.1.54** for Windows 11 x64, including the current UI, Files auto-refresh, Hermes, Pet animation, Memory Saver and draggable Computer Use banner. Platform checks use an isolated Windows VM; physical PC and daily-use acceptance remain owner testing. [Full release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.54) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.54).
 
 ## Your providers, your subscriptions
 
@@ -147,7 +147,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.54 and Windows 0.1.51. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.54 and Windows 0.1.54. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. The app stops safely when a licence ends.
 
@@ -155,7 +155,7 @@ dydxHarneX User is a limited preview: Mac 0.1.54 and Windows 0.1.51. It activate
 
 ## Install
 
-GitHub is the primary download. The same installers are also published on GitLab as a backup. Each service has its own signed update manifest that points at its own copies, so the download addresses differ while the installers are the same.
+GitHub is the primary download. The same installers are also published on GitLab as a backup. Mac has a signed update feed on each service. Windows 0.1.54 is a manual Setup preview; the Windows discovery feeds remain on 0.1.51 while the new build is tested.
 
 ### Mac
 
@@ -215,7 +215,7 @@ To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats,
 
 **Mac 0.1.54:** In an installed 0.1.41 through 0.1.53, use **Check for Updates**, finish active work, then restart when the update is ready. Your installed app finds 0.1.54 on the feed it already uses; from 0.1.54 on, update checks go to GitHub first and fall back to GitLab when GitHub cannot be reached. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile.
 
-**Windows 0.1.51:** In an installed copy, click the version at the bottom left of the sidebar to check for updates, finish active work, then restart when the update is ready. Or quit the app and run the current Setup.exe over the existing installation. Keep the existing User profile. Windows continues to use its existing signed update feed.
+**Windows 0.1.54: run Setup once.** Save active work, quit USER, then run the current Setup.exe over the existing installation. Keep the existing USER profile. The shipped 0.1.51 updater cannot unpack the app archive correctly, so this transition uses Setup rather than Check for Updates. Version 0.1.54 fixes archive handling and is configured for GitHub first with GitLab backup. Windows discovery feeds remain on 0.1.51 during this preview; they do not offer the known-failing 0.1.51 automatic migration.
 
 **Older Mac installs (0.1.40 or earlier):** The GitHub update feed is live again, so first save your work and choose **dydxHarneX User > Check for Updates**. Only if the older updater cannot complete, download the current DMG, quit the old app, and replace it in Applications. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
 
@@ -230,6 +230,6 @@ Your project files stay in the folders you open; dydxHarneX works on them in pla
 ## Licence
 
 dydxHarneX User is proprietary software. Using it requires a licence issued by DYDXFX. This repository holds release downloads only and contains no source code. See the [notice](LICENSE).
-<p align="center"><sub>Screenshots show the packaged Mac 0.1.53 renderer in an isolated browser harness with fictional demo data and shortened local paths. These pictured components are unchanged in Mac 0.1.54. Windows 0.1.51 does not yet include the Mac 0.1.52 to 0.1.54 additions. Provider names belong to their owners.</sub></p>
+<p align="center"><sub>Screenshots show the packaged Mac 0.1.53 renderer in an isolated browser harness with fictional demo data and shortened local paths. These pictured components are unchanged in Mac 0.1.54. Windows 0.1.54 packages the same interface with Windows-specific native services. Provider names belong to their owners.</sub></p>
 
 <p align="center"><sub>© 2026 dydxfx · <a href="https://dydxfx.com">dydxfx.com</a></sub></p>
