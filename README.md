@@ -46,7 +46,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/workspace-current.png" alt="The dydxHarneX User project sidebar, editor and Files panel showing fictional tidepool project files." width="100%">
+  <img src="assets/workspace-current.png?rev=870296b7" alt="The dydxHarneX User project sidebar, editor and Files panel showing fictional tidepool project files." width="100%">
 </p>
 <p align="center"><sub>The project sidebar, editor and Files panel. Captured from the Mac 0.1.53 renderer with fictional demo files; these components are unchanged in 0.1.54.</sub></p>
 
