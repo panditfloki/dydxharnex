@@ -16,13 +16,13 @@
 <p align="center">
   <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><img src="assets/download-mac.svg" alt="Download dydxHarneX User for Mac (Apple Silicon)" width="262" height="58"></a>
   &nbsp;
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-Setup-x64.exe"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
+  <a href="https://github.com/panditfloki/dydxharnex/releases/download/v0.1.55/dydxHarneX-User-0.1.55-Setup-x64.exe"><img src="assets/download-windows.svg" alt="Download dydxHarneX User for Windows 11 (x64)" width="292" height="58"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-arm64.dmg"><b>Download for Mac (Apple Silicon)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-Setup-x64.exe"><b>Download for Windows 11 (x64)</b></a>
+  <a href="https://github.com/panditfloki/dydxharnex/releases/download/v0.1.55/dydxHarneX-User-0.1.55-Setup-x64.exe"><b>Download for Windows 11 (x64)</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/panditfloki/dydxharnex/releases/latest">Release notes</a>
   &nbsp;·&nbsp;
@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.54 · Windows v0.1.54 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.55 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
-  <sub>Mac and Windows use the same current USER interface and feature sources. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.54 adds Hermes, Memory Saver, Files auto-refresh and the current Pet controls. Operating-system permissions and desktop control use the respective platform implementation.</sub>
+  <sub>Mac and Windows use the same current USER interface and feature sources. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 includes the current shared interface and features. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
 </p>
 
 <p align="center">
@@ -116,12 +116,14 @@ On Mac, first-run setup asks for Screen Recording and Accessibility access early
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size.
 - **Mini Apps, Shot capture and detached panels** for the side tasks around a coding session.
 
-## What's new in 0.1.54
+## What's new in 0.1.55
 
-- **Updates now check GitHub first**, with a verified GitLab fallback. Both services carry the releases from 0.1.41 onward, so an installed app finds this update on whichever feed it already uses. GitHub also keeps its four earlier releases.
-- Carries everything from 0.1.53: Files live refresh, Hermes as a local provider, Pet animations, the draggable Computer Use banner, Memory Saver and the first-run access setup.
+- **External browser choice:** use Chrome, Edge or Brave for agent browsing independently of desktop Computer Use. Each project uses a separate persistent browser profile; sign in there when needed. The built-in browser remains available.
+- **Chat reliability:** preserve drafts and sent messages through history/send races; a failed font or stylesheet preload no longer reloads the whole chat window.
+- **Workspace layout:** drag minimized agents onto the workspace. Small chat panes hide decorative numbers and keep welcome actions clear of the composer.
+- **Files and tasks:** open text/Markdown directly in the editor; Files/Git follow the selected task context. Explicit paired-device context sharing is available on a private network.
 
-Windows now also ships **0.1.54** for Windows 11 x64, including the current UI, Files auto-refresh, Hermes, Pet animation, Memory Saver and draggable Computer Use banner. Platform checks use an isolated Windows VM; physical PC and daily-use acceptance remain owner testing. [Full release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.54) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.54).
+Mac and Windows packages come from one shared USER source. Native Mac layout and actual Claude/Codex browser tools were checked with desktop control off. Google/Cloudflare login, physical ROG use and prolonged chat-loss acceptance remain open. [Full release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.55) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.55).
 
 ## Your providers, your subscriptions
 
@@ -147,7 +149,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.54 and Windows 0.1.54. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.55 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. The app stops safely when a licence ends.
 
@@ -155,7 +157,7 @@ dydxHarneX User is a limited preview: Mac 0.1.54 and Windows 0.1.54. It activate
 
 ## Install
 
-GitHub is the primary download. The same installers are also published on GitLab as a backup. Mac has a signed update feed on each service. Windows 0.1.54 is a manual Setup preview; the Windows discovery feeds remain on 0.1.51 while the new build is tested.
+GitHub is the primary download. The same installers are also published on GitLab as a backup. Mac has a signed update feed on each service. Windows 0.1.55 is a manual Setup preview; the Windows discovery feeds remain on 0.1.51 while the new build is tested.
 
 ### Mac
 
@@ -194,7 +196,7 @@ On first run the app asks for Screen Recording and Accessibility access, and opt
 
 ### Windows
 
-**[Download Setup.exe for Windows 11 (x64)](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-Setup-x64.exe)** · [GitLab backup](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-Setup-x64.exe)
+**[Download Setup.exe for Windows 11 (x64)](https://github.com/panditfloki/dydxharnex/releases/download/v0.1.55/dydxHarneX-User-0.1.55-Setup-x64.exe)** · [GitLab backup](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.55/downloads/dydxHarneX-User-0.1.55-Setup-x64.exe)
 
 1. Finish active work and quit the previous dydxHarneX User app.
 2. Run **dydxHarneX-User-Setup-x64.exe** and follow the installer. It installs for your Windows account without administrator rights and adds a Start menu entry.
@@ -204,18 +206,18 @@ On first run the app asks for Screen Recording and Accessibility access, and opt
 To check the installer against the release checksum in PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 "$env:USERPROFILE\Downloads\dydxHarneX-User-Setup-x64.exe"
+Get-FileHash -Algorithm SHA256 "$env:USERPROFILE\Downloads\dydxHarneX-User-0.1.55-Setup-x64.exe"
 ```
 
-The ZIP package ([GitHub](https://github.com/panditfloki/dydxharnex/releases/latest/download/dydxHarneX-User-win-x64.zip) · [GitLab](https://gitlab.com/panditftw/dydxharnex/-/releases/permalink/latest/downloads/dydxHarneX-User-win-x64.zip)) remains available for manual extraction. Extract it fully before opening **dydxHarneX User.exe**; an uninstalled copy does not update itself.
+The ZIP package ([GitHub](https://github.com/panditfloki/dydxharnex/releases/download/v0.1.55/dydxHarneX-User-0.1.55-win-x64.zip) · [GitLab](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.55/downloads/dydxHarneX-User-0.1.55-win-x64.zip)) remains available for manual extraction. Extract it fully before opening **dydxHarneX User.exe**; an uninstalled copy does not update itself.
 
 To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats, settings and licence stay in your Windows user profile.
 
 ## Updates
 
-**Mac 0.1.54:** In an installed 0.1.41 through 0.1.53, use **Check for Updates**, finish active work, then restart when the update is ready. Your installed app finds 0.1.54 on the feed it already uses; from 0.1.54 on, update checks go to GitHub first and fall back to GitLab when GitHub cannot be reached. If 0.1.46 fails before installing the update, its old helper may have been stopped by macOS; install the current DMG once after saving work and quitting the app. Keep the existing User profile.
+**Mac 0.1.55:** Use **Check for Updates**, finish active work, then restart when the update is ready. GitHub is primary with verified GitLab fallback. Existing GitLab-enabled installations find the update on their current feed. If an older updater cannot complete, install the current DMG once after saving work and quitting the app. Keep the existing USER profile.
 
-**Windows 0.1.54: run Setup once.** Save active work, quit USER, then run the current Setup.exe over the existing installation. Keep the existing USER profile. The shipped 0.1.51 updater cannot unpack the app archive correctly, so this transition uses Setup rather than Check for Updates. Version 0.1.54 fixes archive handling and is configured for GitHub first with GitLab backup. Windows discovery feeds remain on 0.1.51 during this preview; they do not offer the known-failing 0.1.51 automatic migration.
+**Windows 0.1.55: use the versioned Setup.** Save active work, quit USER, then run the current Setup.exe over the existing installation. Keep the existing USER profile. The shipped 0.1.51 updater cannot unpack the app archive correctly, so this transition uses Setup rather than Check for Updates. Version 0.1.54 fixes archive handling and is configured for GitHub first with GitLab backup. Windows discovery feeds remain on 0.1.51 during this preview; they do not offer the known-failing 0.1.51 automatic migration.
 
 **Older Mac installs (0.1.40 or earlier):** The GitHub update feed is live again, so first save your work and choose **dydxHarneX User > Check for Updates**. Only if the older updater cannot complete, download the current DMG, quit the old app, and replace it in Applications. Keep your existing profile; the app identity and data locations are unchanged. Later updates use **Check for Updates**.
 
@@ -230,6 +232,6 @@ Your project files stay in the folders you open; dydxHarneX works on them in pla
 ## Licence
 
 dydxHarneX User is proprietary software. Using it requires a licence issued by DYDXFX. This repository holds release downloads only and contains no source code. See the [notice](LICENSE).
-<p align="center"><sub>Screenshots show the packaged Mac 0.1.53 renderer in an isolated browser harness with fictional demo data and shortened local paths. These pictured components are unchanged in Mac 0.1.54. Windows 0.1.54 packages the same interface with Windows-specific native services. Provider names belong to their owners.</sub></p>
+<p align="center"><sub>Screenshots show the packaged Mac 0.1.53 renderer in an isolated browser harness with fictional demo data and shortened local paths. These screenshots illustrate the earlier interface; current layout and features have evolved. Windows uses the shared interface with Windows-specific native services. Provider names belong to their owners.</sub></p>
 
 <p align="center"><sub>© 2026 dydxfx · <a href="https://dydxfx.com">dydxfx.com</a></sub></p>
