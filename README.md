@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.57 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.58 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
-  <sub>Mac and Windows share the USER source. This release updates Mac appearance, chat progress and diff feedback; Windows remains on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 includes the current shared interface and features. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
+  <sub>Mac and Windows share the USER source. This release improves Mac settings, session folders, navigation icons and permission setup readability; Windows remains on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 retains the interface and features from that preview build. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
 </p>
 
 <p align="center">
@@ -116,16 +116,16 @@ On Mac, first-run setup asks for Screen Recording and Accessibility access early
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size.
 - **Mini Apps, Shot capture and detached panels** for the side tasks around a coding session.
 
-## What's new in Mac 0.1.57
+## What's new in Mac 0.1.58
 
-- **Workspace colours:** selecting a palette recolours the workspace in light and dark themes, with clearer accent-strength changes.
-- **Live task progress:** provider plan and task events appear as a checklist inside the chat. Saved progress survives reopening, and interrupted work stays unfinished.
-- **Plan first:** Claude Code and Codex chats can prepare a read-only plan, revise it, then use **Start** to continue through the normal chat flow with **Ask approval**.
-- **Diff feedback:** add review comments to a draft or explicitly send them to a chat in the same project. The picker includes all registered providers and keeps the chosen chat instead of silently switching targets.
+- **Readable Mac permission setup:** text, status badges and buttons use matching Light/Dark theme colours, including disabled controls.
+- **Settings spacing:** App process memory, account notes and the Tools & MCP guide share consistent padding and alignment. App process memory shows RAM used by HarneX processes.
+- **Nested session folders:** drag folders to reorder them or move them into another folder. Clear right/down triangles expand or collapse their contents. Folder actions include Rename, New subfolder, Move up/down, Move into and Ungroup. Moving a folder keeps its chats and subfolders; Ungroup keeps the contents.
+- **Coloured navigation:** Start chat, CLI Terminal, Plugins and Mini Apps have distinct, readable icon colours in Light and Dark themes.
 
-Task progress depends on the plan/task events supplied by the provider. The existing Plan board remains available separately.
+Existing flat folders remain available. Folder order and nesting are saved per project, and chat-folder selectors show nested paths.
 
-Windows remains 0.1.55. Its manual downloads and legacy discovery feeds are unchanged. [Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.57) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.57) · [Earlier 0.1.56 sidebar changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.56).
+Windows remains 0.1.55. Its manual downloads and legacy discovery feeds are unchanged. [Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.58) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.58) · [Earlier 0.1.57 chat progress and appearance changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.57).
 
 ## Your providers, your subscriptions
 
@@ -151,7 +151,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.57 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.58 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. The app stops safely when a licence ends.
 
@@ -219,7 +219,7 @@ To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats,
 
 ## Updates
 
-**Mac 0.1.56:** Use **Check for Updates**, finish active work, then restart when the update is ready. GitHub is primary with verified GitLab fallback. Existing GitLab-enabled installations find the update on their current feed. If an older updater cannot complete, install the current DMG once after saving work and quitting the app. Keep the existing USER profile.
+**Mac USER:** Use **Check for Updates**, finish active work, then restart when the update is ready. GitHub is primary with verified GitLab fallback. Existing GitLab-enabled installations find the update on their current feed. If an older updater cannot complete, install the current DMG once after saving work and quitting the app. Keep the existing USER profile.
 
 **Windows 0.1.55: use the versioned Setup.** Save active work, quit USER, then run the current Setup.exe over the existing installation. Keep the existing USER profile. The shipped 0.1.51 updater cannot unpack the app archive correctly, so this transition uses Setup rather than Check for Updates. Version 0.1.54 fixes archive handling and is configured for GitHub first with GitLab backup. Windows discovery feeds remain on 0.1.51 during this preview; they do not offer the known-failing 0.1.51 automatic migration.
 
