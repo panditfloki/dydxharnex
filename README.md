@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.56 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.57 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
-  <sub>Mac and Windows share the USER source. This release updates the Mac sidebar; Windows remains on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 includes the current shared interface and features. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
+  <sub>Mac and Windows share the USER source. This release updates Mac appearance, chat progress and diff feedback; Windows remains on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 includes the current shared interface and features. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
 </p>
 
 <p align="center">
@@ -116,13 +116,16 @@ On Mac, first-run setup asks for Screen Recording and Accessibility access early
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size.
 - **Mini Apps, Shot capture and detached panels** for the side tasks around a coding session.
 
-## What's new in Mac 0.1.56
+## What's new in Mac 0.1.57
 
-- **Sidebar space:** V2 keeps version/settings at the bottom and extends the project list through the available left column.
-- **Review cards:** results scroll within the right column above the library links, including when a review is expanded.
-- **Tagline placement:** Intent → Execution sits below the logo and hides in the icon-only project rail.
+- **Workspace colours:** selecting a palette recolours the workspace in light and dark themes, with clearer accent-strength changes.
+- **Live task progress:** provider plan and task events appear as a checklist inside the chat. Saved progress survives reopening, and interrupted work stays unfinished.
+- **Plan first:** Claude Code and Codex chats can prepare a read-only plan, revise it, then use **Start** to continue through the normal chat flow with **Ask approval**.
+- **Diff feedback:** add review comments to a draft or explicitly send them to a chat in the same project. The picker includes all registered providers and keeps the chosen chat instead of silently switching targets.
 
-Windows remains 0.1.55. Its manual downloads and legacy discovery feeds are unchanged. [Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.56) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.56) · [Earlier 0.1.55 browser, chat and workspace changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.55).
+Task progress depends on the plan/task events supplied by the provider. The existing Plan board remains available separately.
+
+Windows remains 0.1.55. Its manual downloads and legacy discovery feeds are unchanged. [Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.57) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.57) · [Earlier 0.1.56 sidebar changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.56).
 
 ## Your providers, your subscriptions
 
@@ -148,7 +151,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.56 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.57 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. The app stops safely when a licence ends.
 
@@ -192,6 +195,8 @@ If macOS still refuses the app, verify the download checksum and get a fresh cop
 </details>
 
 On first run the app asks for Screen Recording and Accessibility access, and optionally the Microphone. You can choose **Set up later** and grant them from Settings when you need Computer Use or voice.
+
+Mac builds are still ad-hoc signed. An update can require macOS permissions again; this release does not yet provide stable signing for permission continuity.
 
 ### Windows
 
