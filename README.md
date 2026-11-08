@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.55 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.56 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
-  <sub>Mac and Windows use the same current USER interface and feature sources. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 includes the current shared interface and features. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
+  <sub>Mac and Windows share the USER source. This release updates the Mac sidebar; Windows remains on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 includes the current shared interface and features. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
 </p>
 
 <p align="center">
@@ -116,14 +116,13 @@ On Mac, first-run setup asks for Screen Recording and Accessibility access early
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size.
 - **Mini Apps, Shot capture and detached panels** for the side tasks around a coding session.
 
-## What's new in 0.1.55
+## What's new in Mac 0.1.56
 
-- **External browser choice:** use Chrome, Edge or Brave for agent browsing independently of desktop Computer Use. Each project uses a separate persistent browser profile; sign in there when needed. The built-in browser remains available.
-- **Chat reliability:** preserve drafts and sent messages through history/send races; a failed font or stylesheet preload no longer reloads the whole chat window.
-- **Workspace layout:** drag minimized agents onto the workspace. Small chat panes hide decorative numbers and keep welcome actions clear of the composer.
-- **Files and tasks:** open text/Markdown directly in the editor; Files/Git follow the selected task context. Explicit paired-device context sharing is available on a private network.
+- **Sidebar space:** V2 keeps version/settings at the bottom and extends the project list through the available left column.
+- **Review cards:** results scroll within the right column above the library links, including when a review is expanded.
+- **Tagline placement:** Intent → Execution sits below the logo and hides in the icon-only project rail.
 
-Mac and Windows packages come from one shared USER source. Native Mac layout and actual Claude/Codex browser tools were checked with desktop control off. Google/Cloudflare login, physical ROG use and prolonged chat-loss acceptance remain open. [Full release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.55) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.55).
+Windows remains 0.1.55. Its manual downloads and legacy discovery feeds are unchanged. [Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.56) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.56) · [Earlier 0.1.55 browser, chat and workspace changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.55).
 
 ## Your providers, your subscriptions
 
@@ -149,7 +148,7 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.55 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.56 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
 **Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. The app stops safely when a licence ends.
 
@@ -215,7 +214,7 @@ To uninstall, use **Settings > Apps > dydxHarneX User > Uninstall**. Your chats,
 
 ## Updates
 
-**Mac 0.1.55:** Use **Check for Updates**, finish active work, then restart when the update is ready. GitHub is primary with verified GitLab fallback. Existing GitLab-enabled installations find the update on their current feed. If an older updater cannot complete, install the current DMG once after saving work and quitting the app. Keep the existing USER profile.
+**Mac 0.1.56:** Use **Check for Updates**, finish active work, then restart when the update is ready. GitHub is primary with verified GitLab fallback. Existing GitLab-enabled installations find the update on their current feed. If an older updater cannot complete, install the current DMG once after saving work and quitting the app. Keep the existing USER profile.
 
 **Windows 0.1.55: use the versioned Setup.** Save active work, quit USER, then run the current Setup.exe over the existing installation. Keep the existing USER profile. The shipped 0.1.51 updater cannot unpack the app archive correctly, so this transition uses Setup rather than Check for Updates. Version 0.1.54 fixes archive handling and is configured for GitHub first with GitLab backup. Windows discovery feeds remain on 0.1.51 during this preview; they do not offer the known-failing 0.1.51 automatic migration.
 
