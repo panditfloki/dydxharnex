@@ -30,11 +30,11 @@
 </p>
 
 <p align="center">
-  <sub>Mac v0.1.58 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
+  <sub>Mac v0.1.59 · Windows v0.1.55 · limited preview · Mac: macOS 12 or later, Apple Silicon, not notarized by Apple yet · Windows: Windows 11 x64, not code-signed yet · licence key required</sub>
 </p>
 
 <p align="center">
-  <sub>Mac and Windows share the USER source. This release improves Mac settings, session folders, navigation icons and permission setup readability; Windows remains on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 retains the interface and features from that preview build. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
+  <sub>Mac and Windows share the USER source. Mac 0.1.59 is a repair preview for saves, export, licence recovery, phone approvals, file opening, Devices and privacy defaults. Eight known findings remain; Windows stays on 0.1.55. The screenshots show the Mac interface with fictional demo data; each caption identifies its captured version. Windows 0.1.55 retains the interface and features from that preview build. Physical PC acceptance remains in progress. Operating-system permissions and desktop control use the respective platform implementation.</sub>
 </p>
 
 <p align="center">
@@ -116,16 +116,19 @@ On Mac, first-run setup asks for Screen Recording and Accessibility access early
 - **Light, dark or system appearance**, with six paired palettes, custom accents and adjustable text size.
 - **Mini Apps, Shot capture and detached panels** for the side tasks around a coding session.
 
-## What's new in Mac 0.1.58
+## What's new in Mac 0.1.59
 
-- **Readable Mac permission setup:** text, status badges and buttons use matching Light/Dark theme colours, including disabled controls.
-- **Settings spacing:** App process memory, account notes and the Tools & MCP guide share consistent padding and alignment. App process memory shows RAM used by HarneX processes.
-- **Nested session folders:** drag folders to reorder them or move them into another folder. Clear right/down triangles expand or collapse their contents. Folder actions include Rename, New subfolder, Move up/down, Move into and Ungroup. Moving a folder keeps its chats and subfolders; Ungroup keeps the contents.
-- **Coloured navigation:** Start chat, CLI Terminal, Plugins and Mini Apps have distinct, readable icon colours in Light and Dark themes.
+- **File saves:** atomic-write handling for editor, Docs, device and GitLab settings, plus download collision handling. Error and concurrency cases remain open below.
+- **Chat export:** handles duplicate names, case differences and reserved names, with clearer partial-export and retry handling.
+- **Licence recovery:** renewal reminders, a Sign in entry, same-account lease preservation and a fixed finishing period after a signed licence expires. Restart and input recovery remain incomplete.
+- **Phone approvals:** low-risk requests can be approved on the phone; requests with higher or missing risk stay on desktop. Pairing copy is clearer.
+- **Open File:** executable, installer and script targets from chat are revealed in Finder instead of launched, with checks on the resolved target.
+- **Devices:** a draft-close dialog offers Keep Editing or Discard and Close. Quit cancellation still needs repair.
+- **Privacy defaults:** removes a personal-email default and replaces a private GitLab placeholder in the shipped interface.
 
-Existing flat folders remain available. Folder order and nesting are saved per project, and chat-folder selectors show nested paths.
+**Repair remains incomplete:** eight findings remain in save error handling, download concurrency, licence recovery, Devices quit cancellation, phone reconnect, GitLab warning persistence and sign-in input preservation. Native acceptance checks remain outstanding.
 
-Windows remains 0.1.55. Its manual downloads and legacy discovery feeds are unchanged. [Mac release notes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.58) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.58) · [Earlier 0.1.57 chat progress and appearance changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.57).
+Windows manual downloads stay on 0.1.55 and discovery feeds stay on 0.1.51. [Full release notes and limitations](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.59) · [GitLab copy](https://gitlab.com/panditftw/dydxharnex/-/releases/v0.1.59) · [Earlier settings and session-folder changes](https://github.com/panditfloki/dydxharnex/releases/tag/v0.1.58).
 
 ## Your providers, your subscriptions
 
@@ -151,9 +154,9 @@ Nothing is connected until you sign in or add a key yourself, and no model usage
 
 ## Limited preview
 
-dydxHarneX User is a limited preview: Mac 0.1.58 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
+dydxHarneX User is a limited preview: Mac 0.1.59 and Windows 0.1.55. It activates with the email address and licence key issued to you by DYDXFX. Free trials and paid plans are not open yet; they come with the paid launch later. The Mac build is ad-hoc signed and not notarized by Apple, and the Windows build is not code-signed yet, so the first launch needs one extra step (below).
 
-**Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. The app stops safely when a licence ends.
+**Settings > Account** shows your account and licence, with logout and account switching. About shows the installed version and edition, opens the product and legal pages, and keeps update results inline. Licence-expiry and recovery changes are in preview; known recovery limitations are listed above.
 
 [Website](https://www.dydxfx.com/harnex/) · [Privacy policy](https://www.dydxfx.com/harnex/privacy.html) · [Terms of sale](https://www.dydxfx.com/harnex/terms.html)
 
